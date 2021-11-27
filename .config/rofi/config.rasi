@@ -1,0 +1,87 @@
+/*
+____        __ _
+|  _ \ ___  / _(_)
+| |_) / _ \| |_| |
+|  _ < (_) |  _| |
+|_| \_\___/|_| |_|
+
+CONFIGURATION FOR ROFI
+*/
+
+* {
+
+		  font: "JetBrains Mono Nerd Font 12";
+		  
+		  /* Colors */
+		  foreground: #d3dae3;
+		  background: #383c4a;
+		  
+		  active-background: #383c4a;
+		  urgent-backgroubd: #383c4a;
+
+		  selected-background: #4877b1;
+		  selected-urgent-background: #4877b1;
+		  selected-active-bacground: #4877b1;
+
+		  bordercolor: #d3dae3;
+		  separatorcolor: #d3dae3;
+
+
+
+}
+
+#window {
+
+		  background-color: @background;
+		  border: 1;
+		  border-radius: 0;
+		  border-color: @bordercolor;
+		  padding: 5;		  
+}
+
+#mainbox {
+		  border: 0;
+		  padding: 0;
+}
+
+#message {
+		  border: 0px;
+		  padding: 2px;
+}
+
+#textbox {
+		  text-color: @foreground;
+		  padding: 25px;
+}
+#listview {
+		  fixed-height: 0;
+		  lines: 15;
+		  border: 0px;
+		  spacing: 0px;
+		  scrollbar: false;
+		  padding: 0px;
+}
+
+#element {
+
+		  padding: 5px;
+
+}
+
+#element.normal.normal {background-color: @background; text-color: @foreground;}
+#element.normal.active {background-color: @background; text-color: @foreground;}
+#element.normal.urgent {background-color: @background; text-color: @foreground;}
+
+#element.selected.normal {background-color: @selected-background; text-color: @foreground;}
+#element.selected.urgent {background-color: @selected-background; text-color: @foreground;}
+#element.selected.active {background-color: @selected-background; text-color: @foreground;}
+
+#element.alternate.normal {background-color: @background; text-color: @foreground;}
+#element.alternate.active {background-color: @background; text-color: @foreground;}
+#element.alternate.urgent {background-color: @background; text-color: @foreground;}
+
+#inputbar {
+		  spacing: 0;
+		  text-color: @foreground;
+		  padding: 5px;
+}
