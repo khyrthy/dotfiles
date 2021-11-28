@@ -15,4 +15,4 @@ nm-applet &
 picom &
 
 # Restore wallpaper
-nitrogen --restore
+feh --bg-fill ~/Images/Wallpapers/wallpaper

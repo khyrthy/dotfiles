@@ -40,7 +40,7 @@ font_configuration = {
 ModKey = "mod4"
 
 # Set kitty as the default Terminal
-Terminal = "kitty"
+Terminal = "terminate"
 
 # KEYBINDINGS
 # This section is reserved to keybindings
@@ -81,6 +81,10 @@ keys = [
 
         # Advanced run menu
         Key([ModKey, "shift"], "space", lazy.spawn("rofi -show run"), desc="Run rofi run"),
+
+
+        # File explorer
+        Key([ModKey], "e", lazy.spawn(Terminal + " -e ranger"), desc="File explorer"),
 
         # Power menu
         Key([ModKey], "p", lazy.spawn("rofi -show p -modi p:~/.config/qtile/rofi-power-menu -width 20 -lines 6"), desc="Power menu"),

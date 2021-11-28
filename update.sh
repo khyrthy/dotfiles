@@ -39,14 +39,14 @@ mkdir -pv ./.config/cava
 rm -v ./.config/cava/config
 cp -v ~/.config/cava/config ./.config/cava
 
-# Kitty
-figlet Kitty
+# Terminate
+figlet Terminate
 sleep 0.2
 
-mkdir -pv ./.config/kitty
+mkdir -pv ./.config/terminate
 
-rm -v ./.config/kitty/kitty.conf
-cp -v ~/.config/kitty/kitty.conf ./.config/kitty
+rm -v ./.config/terminate/config
+cp -v ~/.config/terminate/config ./.config/terminate
 
 # Neovim
 figlet neovim
