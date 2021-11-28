@@ -84,3 +84,11 @@ mkdir -pv ./.config/picom
 rm -v ./.config/picom/picom.conf
 cp -v ~/.config/picom/picom.conf ./.config/picom
 
+# Dunst
+figlet dunst
+sleep 0.2
+
+mkdir -pv ./.config/dunst
+
+rm -v ./.config/dunst/dunstrc
+cp -v ~/.config/dunst/dunstrc ./.config/dunst

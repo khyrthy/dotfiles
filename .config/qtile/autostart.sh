@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # Policy kit
+lxqt-policykit-agent
 
+# Dunst
+dunst &
 
 # Set keymap to fr
 setxkbmap fr
