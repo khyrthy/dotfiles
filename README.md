@@ -30,7 +30,7 @@ This section contains lots of informations about what I'm actually using in my c
 
 ## Applications
 
-* **Terminal Emulator:** Kitty
+* **Terminal Emulator:** Terminate
 * **Web Browser:** Firefox
 * **VM Manager:** VirtualBox
 * **File Manager:** PcmanFM/ranger
