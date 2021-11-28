@@ -11,6 +11,9 @@
 # AUTOSTART
 # =====================================================================================
 
+# Cursor
+xsetroot -cursor_name "left_ptr"
+
 # Polybar
 killall polybar
 polybar --config=~/.config/polybar/config-bspwm.ini main &
