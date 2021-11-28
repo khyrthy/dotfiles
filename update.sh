@@ -10,6 +10,32 @@ rm -v ./.zshrc
 
 cp -v ~/.zshrc .
 
+# i3
+figlet i3-gaps
+sleep 0.2
+
+mkdir -pv ./.config/i3
+
+rm -v ./.config/i3/config
+rm -v ./.config/i3/rofi-power-menu
+rm -v ./.config/i3/screenlayout.sh
+
+cp -v ~/.config/i3/config ./.config/i3
+cp -v ~/.config/i3/rofi-power-menu ./.config/i3
+cp -v ~/.config/i3/screenlayout.sh ./.config/i3
+
+# Polybar
+figlet Polybar
+sleep 0.2
+
+mkdir -pv ./.config/polybar
+
+rm -v ./.config/polybar/launch.sh
+rm -v ./.config/polybar/config.ini
+
+cp -v ~/.config/polybar/launch.sh ./.config/polybar
+cp -v ~/.config/polybar/config.ini ./.config/polybar
+
 # Qtile
 figlet Qtile
 sleep 0.2

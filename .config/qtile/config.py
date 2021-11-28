@@ -157,7 +157,8 @@ keys.extend([
 
 layout_theme = {
         "border_width": 2,
-        "margin": 12,
+        "margin": 9,
+        "margin_on_single": 18,
         
         "border_focus": colors["foreground"],
         "border_normal": colors["black"]
@@ -175,6 +176,9 @@ layouts = [
 # Defaults configs for Widgets
 screens = [
         Screen(
+
+            
+
             top=bar.Bar(background=colors["background"], opacity=1, size=30, widgets=[
 
                     # Workspaces widget
