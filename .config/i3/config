@@ -30,7 +30,7 @@ client.background			#383c4a
 bar {
 
 		  status_command	i3status
-
+		  tray_output		none
 		  mode 			hide
 		  hidden_state hide
 		  modifier		Mod1
