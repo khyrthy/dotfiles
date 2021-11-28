@@ -39,14 +39,14 @@ mkdir -pv ./.config/cava
 rm -v ./.config/cava/config
 cp -v ~/.config/cava/config ./.config/cava
 
-# Termite
-figlet Termite
+# Alacritty
+figlet Alacritty
 sleep 0.2
 
-mkdir -pv ./.config/termite
+mkdir -pv ./.config/alacritty
 
-rm -v ./.config/termite/config
-cp -v ~/.config/termite/config ./.config/termite
+rm -v ./.config/alacritty/alacritty.yml
+cp -v ~/.config/alacritty/alacritty.yml ./.config/alacritty
 
 # Neovim
 figlet neovim
