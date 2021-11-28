@@ -39,14 +39,14 @@ mkdir -pv ./.config/cava
 rm -v ./.config/cava/config
 cp -v ~/.config/cava/config ./.config/cava
 
-# Terminate
-figlet Terminate
+# Termite
+figlet Termite
 sleep 0.2
 
-mkdir -pv ./.config/terminate
+mkdir -pv ./.config/termite
 
-rm -v ./.config/terminate/config
-cp -v ~/.config/terminate/config ./.config/terminate
+rm -v ./.config/termite/config
+cp -v ~/.config/termite/config ./.config/termite
 
 # Neovim
 figlet neovim

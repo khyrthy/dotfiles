@@ -1,0 +1,42 @@
+[colors]
+
+# special
+foreground      = #d3dae3
+foreground_bold = #d3dae3
+cursor          = #d3dae3
+background      = #383c4a
+
+# black
+color0  = #4b5164
+color8  = #616981
+
+# red
+color1  = #e14245
+color9  = #e16f7e
+
+# green
+color2  = #5ca75b
+color10 = #add488
+
+# yellow
+color3  = #f6ab32
+color11 = #fdc35f
+
+# blue
+color4  = #4877b1
+color12 = #8ca9bf
+
+# magenta
+color5  = #a660c3
+color13 = #e3afec
+
+# cyan
+color6  = #5294e2
+color14 = #73c5e2
+
+# white
+color7  = #a9a9aa
+color15 = #fcfcfc
+
+[options]
+font = JetBrains Mono Nerd Font 12
