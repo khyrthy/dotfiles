@@ -61,13 +61,13 @@ exec_always dunst
 exec_always setxkbmap fr
 
 # Screen configuration
-exec_always ~/.config/i3/screenlayout.sh
+exec_always ~/.screenlayout.sh
 
 # Some other programs
 exec_always picom
 
 # Polybar
-exec_always ~/.config/polybar/launch.sh
+exec_always ~/.config/polybar/launch-i3.sh
 
 # KEYBINDINGS
 # ===============================================================================
@@ -81,10 +81,13 @@ floating_modifier Mod4
 # Terminal
 set $terminal "alacritty"
 
+# Lock screen using betterlockscreen
+bindsym $mod+l exec betterlockscreen -l
+
 # Raise, lower and mute volume
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT-SINK@ +10%
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-vokume @DEFAULT-SINK@ -10%
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAUKT-SINK@ toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
 # Start a terminam
 bindsym $mod+Return 			exec $terminal
@@ -95,7 +98,7 @@ bindsym $mod+Shift+w 		kill
 # Rofi
 bindsym $mod+space 			exec rofi -show drun
 bindsym $mod+Shift+space	exec rofi -show run
-bindsym $mod+p					exec rofi -show p -modi p:~/.config/i3/rofi-power-menu
+bindsym $mod+p					exec rofi -show p -modi p:~/.config/rofi/power-menu
 
 # Change focus
 bindsym $mod+Left				focus left

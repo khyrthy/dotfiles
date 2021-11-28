@@ -1,0 +1,90 @@
+#           _     _       _ 
+#  _____  _| |__ | | ____| |
+# / __\ \/ / '_ \| |/ / _` |
+# \__ \>  <| | | |   < (_| |
+# |___/_/\_\_| |_|_|\_\__,_|
+                          
+# sxhkd Configuration file
+
+# WM-FREE KEYS
+# ====================================================================================
+
+# Media Controls
+XF86AudioRaiseVolume
+		  pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+		  pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+		  pactl set-sink-mute 0 toggle
+
+# Terminal Emulator
+super + Return
+		  alacritty
+
+# Rofi
+super + @space
+		  rofi -show drun
+
+super + shift + @space
+		  rofi -show run
+
+super + p
+		  rofi -show p -modi p:~/.config/rofi/power-menu
+
+# WM CONTROL KEYS
+# =====================================================================================
+
+# Restart BSPWM & Reload configuration file
+super + shift + r
+		  bspc wm -r
+
+# Close a window
+super + shift + w
+		  bspc node -c
+
+# Window Mode
+# Toggle fullscreen (monocle)
+super + shift + f
+		  bspc node -t fullscreen
+
+# Tiled
+super + t
+		  bspc node -t tiled
+
+# Floating
+super + f
+		  bspc node -t floating
+
+# Grow a window
+super + ctrl + {Left,Right,Up,Down}
+		  bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+
+
+# Switch Workspaces
+# Go to workspace
+# eDP1
+super + {ampersand,eacute,quotebl,apostrophe,parenleft}
+		  bspc desktop -f {1,2,3,4,5}
+
+# VGA1
+super + {minus,egrave,underscore,ccedilla,agrave}
+		  bspc desktop -f {I,II,III,IV,V}
+
+# Send Window to workspace
+# eDP1
+super + shift + {ampersand,eacute,quotebl,apostrophe,parenleft}
+		  bspc node -d {1,2,3,4,5}
+
+# VGA1
+super + shift + {minus,egrave,underscore,ccedilla,agrave}
+		  bspc node -d {I,II,III,IV,V}
+
+# Change focus
+super + {Left,Right,Up,Down}
+		  bspc node -f {west,east,north,south}
+
+# Move window in the stack
+super + shift + {Left,Right,Up,Down}
+		  bspc node -s {west,east,north,south}
