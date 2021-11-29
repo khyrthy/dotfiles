@@ -9,6 +9,13 @@
 # WM-FREE KEYS
 # ====================================================================================
 
+# Screenshots
+Print
+		  xfce4-screenshooter --region --save /dev/stdout | xclip -i -selection clipboard -t image/png
+
+shift + Print
+		  xfce4-screenshooter --window --save /dev/stdout | xclip -i -selection clipboard -t image/png
+
 # Media Controls
 XF86AudioRaiseVolume
 		  pactl set-sink-volume 0 +5%
