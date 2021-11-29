@@ -86,6 +86,16 @@ mkdir -pv ./.config/cava
 rm -v ./.config/cava/config
 cp -v ~/.config/cava/config ./.config/cava
 
+# Kitty
+figlet Kitty
+sleep 0.2
+
+mkdir -pv ./.config/kitty
+
+rm -v ./.config/kitty/kitty.conf
+
+cp -v ~/.config/kitty/kitty.conf ./.config/kitty
+
 # Alacritty
 figlet Alacritty
 sleep 0.2

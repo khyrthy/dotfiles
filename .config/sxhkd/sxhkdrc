@@ -31,7 +31,7 @@ XF86AudioPrev
 
 # Terminal Emulator
 super + Return
-		  alacritty
+		  kitty
 
 # Rofi
 super + @space

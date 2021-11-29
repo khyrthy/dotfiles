@@ -40,7 +40,7 @@ font_configuration = {
 ModKey = "mod4"
 
 # Set kitty as the default Terminal
-Terminal = "alacritty"
+Terminal = "kitty"
 
 # KEYBINDINGS
 # This section is reserved to keybindings

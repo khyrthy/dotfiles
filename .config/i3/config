@@ -79,7 +79,7 @@ set $mod Mod4
 floating_modifier Mod4
 
 # Terminal
-set $terminal "alacritty"
+set $terminal "kitty"
 
 # Lock screen using betterlockscreen
 bindsym $mod+l exec betterlockscreen -l
