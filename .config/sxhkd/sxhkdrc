@@ -42,13 +42,14 @@ super + Return
 
 # Rofi
 super + @space
-		  rofi -show drun
+		  rofi -show drun -scroll-method 1
 
 super + shift + @space
-		  rofi -show run
+		  rofi -show run -scroll-method 1
 
 super + p
 		  rofi -show p -modi p:~/.config/rofi/power-menu
+		  
 
 # WM CONTROL KEYS
 # =====================================================================================
