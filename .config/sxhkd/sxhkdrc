@@ -83,7 +83,7 @@ super + ctrl + {Left,Right,Up,Down}
 # Switch Workspaces
 # Go to workspace
 # eDP1
-super + {ampersand,eacute,quotebl,apostrophe,parenleft}
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft}
 		  bspc desktop -f {1,2,3,4,5}
 
 # VGA1
