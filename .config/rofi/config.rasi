@@ -10,20 +10,20 @@ CONFIGURATION FOR ROFI
 
 * {
 
-		  font: "JetBrains Mono Nerd Font 12";
+		  font: "FantasqueSansMono Nerd Font 14";
 		  
 		  /* Colors */
-		  foreground: #d3dae3;
-		  background: #383c4a;
+		  foreground: #f5f5f5;
+		  background: #212121;
 		  
-		  active-background: #383c4a;
-		  urgent-backgroubd: #383c4a;
+		  active-background: #212121;
+		  urgent-backgroubd: #cc6666;
 
-		  selected-background: #4877b1;
-		  selected-urgent-background: #4877b1;
-		  selected-active-bacground: #4877b1;
+		  selected-background: #f5f5f5;
+		  selected-urgent-background: #f5f5f5;
+		  selected-active-bacground: #f5f5f5;
 
-		  bordercolor: #d3dae3;
+		  bordercolor: #373b41;
 		  separatorcolor: #d3dae3;
 
 
@@ -32,11 +32,11 @@ CONFIGURATION FOR ROFI
 
 #window {
 
+		  border-radius: 7px;
 		  background-color: @background;
 		  border: 1;
-		  border-radius: 0;
 		  border-color: @bordercolor;
-		  padding: 5;		  
+		  padding: 10;		  
 }
 
 #mainbox {
@@ -64,7 +64,8 @@ CONFIGURATION FOR ROFI
 
 #element {
 
-		  padding: 5px;
+		  padding: 7px;
+		  border-radius: 7px;
 
 }
 
@@ -72,9 +73,9 @@ CONFIGURATION FOR ROFI
 #element.normal.active {background-color: @background; text-color: @foreground;}
 #element.normal.urgent {background-color: @background; text-color: @foreground;}
 
-#element.selected.normal {background-color: @selected-background; text-color: @foreground;}
-#element.selected.urgent {background-color: @selected-background; text-color: @foreground;}
-#element.selected.active {background-color: @selected-background; text-color: @foreground;}
+#element.selected.normal {background-color: @selected-background; text-color: @background;}
+#element.selected.urgent {background-color: @selected-background; text-color: @background;}
+#element.selected.active {background-color: @selected-background; text-color: @background;}
 
 #element.alternate.normal {background-color: @background; text-color: @foreground;}
 #element.alternate.active {background-color: @background; text-color: @foreground;}

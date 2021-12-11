@@ -14,17 +14,18 @@ font pango:JetBrains Mono Nerd Font 8
 
 # Gaps
 gaps inner 15
+gaps top 40
 
 # Borders
-default_border 			pixel 2
-default_floating_border pixel 2
+default_border 			pixel 0
+default_floating_border pixel 0
 
 # Colors
-client.focused				#d3dae3 #d3dae3 #d3dae3 #d3dae3 #d3dae3
-client.focused_inactive #4b5164 #4b5164 #4b5164 #4b5164 #4b5164
-client.unfocused			#4b5164 #4b5164 #4b5164 #4b5164 #4b5164
-client.urgent				#e14245 #e14245 #e14245 #e14245 #e14245
-client.background			#383c4a
+client.focused				#373b41 #373b41 #373b41 #373b41 #373b41 
+client.focused_inactive #1d1f21 #1d1f21 #1d1f21 #1d1f21 #1d1f21 
+client.unfocused			#1d1f21 #1d1f21 #1d1f21 #1d1f21 #1d1f21 	
+client.urgent				#cc6666 #cc6666 #cc6666 #cc6666 #cc6666 
+client.background			#1d1f21
 
 # Bar
 bar {
@@ -52,7 +53,7 @@ exec --no-startup-id nm-applet
 exec_always feh --bg-fill ~/Images/Wallpapers/wallpaper
 
 # Policy kit
-exec_always lxqt-policykit-agent
+exec /usr/lib/xfce-polkit/xfce-polkit
 
 # Dunst
 exec_always dunst
@@ -61,13 +62,15 @@ exec_always dunst
 exec_always setxkbmap fr
 
 # Screen configuration
-exec_always ~/.screenlayout.sh
+exec --no-startup-id xrandr --output eDP1 --mode 1366x768 --output VGA1 --primary --right-of eDP1 --mode 1920x1080
 
 # Some other programs
 exec_always picom
 
 # Polybar
-exec_always ~/.config/polybar/launch-i3.sh
+exec killall polybar
+exec polybar --config=~/.config/polybar/config-i3.ini bar
+exec polybar --config=~/.config/polybar/config-i3.ini bar2
 
 # KEYBINDINGS
 # ===============================================================================
@@ -89,15 +92,25 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
 
+# Media controls
+bindsym XF86AudioPlay exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+bindsym XF86AudioStop exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Stop
+bindsym XF86AudioNext exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+bindsym XF86AudioPrev exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
 # Start a terminam
 bindsym $mod+Return 			exec $terminal
 
 # Kill the focused window
 bindsym $mod+Shift+w 		kill
 
+# Screenshots
+bindsym Print exec --no-startup-id xfce4-screenshooter --region --save /dev/stdout | xclip -i -selection clipboard -t image/png
+bindsym shif+Print exec --no-startup-id xfce4-screenshooter --window --save /dev/stdout | xclip -i -selection clipboard -t -i image/png
+
 # Rofi
-bindsym $mod+space 			exec rofi -show drun
-bindsym $mod+Shift+space	exec rofi -show run
+bindsym $mod+space 			exec rofi -show drun -show-icons
+bindsym $mod+Shift+space	exec rofi -show run -show-icons
 bindsym $mod+p					exec rofi -show p -modi p:~/.config/rofi/power-menu
 
 # Change focus

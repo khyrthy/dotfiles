@@ -2,14 +2,14 @@
 
 # FRAME WIDTH
 [global]
-frame_width = 2
+frame_width = 0
 
 # COLORS
 [urgency_low]
-foreground = "#d3dae3"
-background = "#383c4a"
+foreground = "#F5F5F5"
+background = "#212121"
 
 [urgency_normal]
-foreground = "#d3dae3"
-background = "#383c4a"
+foreground = "#F5F5F5"
+background = "#212121"
 

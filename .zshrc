@@ -117,5 +117,6 @@ source ~/.spotipy
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias ls="exa --icons"
-alias mat="cmatrix -C 'blue'"
+alias mat="cmatrix -C 'cyan' -b"
 alias fetch="clear && paleofetch"
+alias clock="tty-clock -c -C 6"

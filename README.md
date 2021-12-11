@@ -17,20 +17,20 @@ This section contains lots of informations about what I'm actually using in my c
 * **Desktop:** Qtile on Xorg
 * **Display Manager:** Lightdm/GTK Greeter
 * **Compositor:** Picom [(ibhagwan's fork)](https://github.com/ibhagwan/picom)
-* **Polycikit:** Lxde policy agent
+* **Polycikit:** Xfce4 policy agent
 
 * **Shell:** Zsh/OhMyZsh
 * **Zsh Theme:** PowerLevel10K
 
 ## Desktop elements
  
-* **Bar:** Qtile-bar
+* **Bar:** Polybar
 * **Runner:** Rofi
 * **Wallpaper:** Nitrogen [(gallery here)](https://github.com/khyrthy/wallpapers)
 
 ## Applications
 
-* **Terminal Emulator:** Alacritty
+* **Terminal Emulator:** Kitty
 * **Web Browser:** Firefox
 * **VM Manager:** VirtualBox
 * **File Manager:** PcmanFM/ranger

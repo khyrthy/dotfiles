@@ -10,26 +10,6 @@ rm -v ./.zshrc
 
 cp -v ~/.zshrc .
 
-# Bspwm
-figlet bspwm
-sleep 0.2
-
-mkdir -pv ./.config/bspwm
-
-rm -v ./.config/bspwm/bspwmrc
-
-cp -v ~/.config/bspwm/bspwmrc ./.config/bspwm
-
-# Sxhkd
-figlet sxhkd
-sleep 0.2
-
-mkdir -pv ./.config/sxhkd
-
-rm -v ./.config/sxhkd/sxhkdrc
-
-cp -v ~/.config/sxhkd/sxhkdrc ./.config/sxhkd
-
 # i3
 figlet i3-gaps
 sleep 0.2
@@ -57,25 +37,6 @@ rm -v ./.confog/polybar/config-bspwm.ini
 cp -v ~/.config/polybar/launch-i3.sh ./.config/polybar
 cp -v ~/.config/polybar/config-i3.ini ./.config/polybar
 cp -v ~/.config/polybar/config-bspwm.ini ./.config/polybar
-# Qtile
-figlet Qtile
-sleep 0.2
-
-mkdir -pv ./.config/qtile
-
-rm -v ./.config/qtile/autostart.sh
-rm -v ./.config/qtile/rofi-power-menu
-rm -v ./.config/qtile/config.py
-rm -v ./.config/qtile/screenlayout.sh
-rm -v ./.config/qtile/scrnsht-wdw.sh
-rm -v ./.config/qtile/scrnsht.sh
-
-cp -v ~/.config/qtile/config.py ./.config/qtile
-cp -v ~/.config/qtile/autostart.sh ./.config/qtile
-cp -v ~/.config/qtile/rofi-power-menu ./.config/qtile
-cp -v ~/.config/qtile/screenlayout.sh ./.config/qtile
-cp -v ~/.config/qtile/scrnsht.sh ./.config/qtile
-cp -v ~/.config/qtile/scrnsht-wdw.sh ./.config/qtile
 
 # Cava
 figlet Cava
@@ -95,15 +56,6 @@ mkdir -pv ./.config/kitty
 rm -v ./.config/kitty/kitty.conf
 
 cp -v ~/.config/kitty/kitty.conf ./.config/kitty
-
-# Alacritty
-figlet Alacritty
-sleep 0.2
-
-mkdir -pv ./.config/alacritty
-
-rm -v ./.config/alacritty/alacritty.yml
-cp -v ~/.config/alacritty/alacritty.yml ./.config/alacritty
 
 # Neovim
 figlet neovim
