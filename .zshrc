@@ -120,3 +120,6 @@ alias ls="exa --icons"
 alias mat="cmatrix -C 'cyan' -b"
 alias fetch="clear && paleofetch"
 alias clock="tty-clock -c -C 6"
+
+alias fetch="~/.fetch.py"
+~/.fetch.py

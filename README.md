@@ -11,6 +11,10 @@ Please enjoy!
 
 This section contains lots of informations about what I'm actually using in my configuration to get a cool desktop
 
+# Fetch Program
+
+The fetch program is one I made quickly using Python. To install it, you just need to copy it to `~/.fetch.py` and install the `colorama` python package.
+
 ## Main components
 
 * **OS:** Arch Linux x86-64
@@ -37,9 +41,8 @@ This section contains lots of informations about what I'm actually using in my c
 
 ## Desktop goods
 
-* **Fetch:** Neofetch
+* **Fetch:** Custom
 * **Matrix:** Cmatrix
 * **Visualizer:** Cava (pulseaudio)
-
 
 
