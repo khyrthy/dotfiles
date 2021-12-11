@@ -3,6 +3,9 @@
 # FRAME WIDTH
 [global]
 frame_width = 0
+origin = top-right
+offset = 12x52
+
 
 # COLORS
 [urgency_low]
