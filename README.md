@@ -26,7 +26,7 @@ This is the homepage I made for my browser. You can find it [here](homepage.html
 ## Main components
 
 * **OS:** Arch Linux x86-64
-* **Desktop:** Qtile on Xorg
+* **Desktop:** i3-gaps
 * **Display Manager:** Lightdm/GTK Greeter
 * **Compositor:** Picom [(ibhagwan's fork)](https://github.com/ibhagwan/picom)
 * **Polycikit:** Xfce4 policy agent
