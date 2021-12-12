@@ -95,8 +95,11 @@ bindsym XF86AudioStop exec --no-startup-id dbus-send --print-reply --dest=org.mp
 bindsym XF86AudioNext exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
 bindsym XF86AudioPrev exec --no-startup-id dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
 
-# Start a terminam
+# Start a terminal emulator
 bindsym $mod+Return 			exec $terminal
+
+# Lock the screen
+bindsym $mod+l					exec dm-tool lock
 
 # Kill the focused window
 bindsym $mod+Shift+w 		kill
