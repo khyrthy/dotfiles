@@ -30,13 +30,11 @@ sleep 0.2
 
 mkdir -pv ./.config/polybar
 
-rm -v ./.config/polybar/launch-i3.sh
-rm -v ./.config/polybar/config-i3.ini
-rm -v ./.confog/polybar/config-bspwm.ini
+rm -v ./.config/polybar/launch.sh
+rm -v ./.config/polybar/config.ini
 
-cp -v ~/.config/polybar/launch-i3.sh ./.config/polybar
-cp -v ~/.config/polybar/config-i3.ini ./.config/polybar
-cp -v ~/.config/polybar/config-bspwm.ini ./.config/polybar
+cp -v ~/.config/polybar/launch.sh ./.config/polybar
+cp -v ~/.config/polybar/config.ini ./.config/polybar
 
 # Cava
 figlet Cava

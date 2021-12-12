@@ -68,8 +68,7 @@ exec --no-startup-id xrandr --output eDP1 --mode 1366x768 --output VGA1 --primar
 exec_always picom
 
 # Polybar
-exec_always killall polybar && polybar --config=~/.config/polybar/config-i3.ini bar && polybar --config=~/.config/polybar/config-i3.ini bar2
-
+exec_always bash ~/.config/polybar/launch.sh
 # KEYBINDINGS
 # ===============================================================================
 
