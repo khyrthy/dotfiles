@@ -99,3 +99,10 @@ mkdir -pv ./.config/dunst
 
 rm -v ./.config/dunst/dunstrc
 cp -v ~/.config/dunst/dunstrc ./.config/dunst
+
+# Browser's homepage
+figlet Homepage
+sleep 0.2
+
+rm -v ./homepage.html
+cp -v ~/Documents/.homepage ./homepage.html

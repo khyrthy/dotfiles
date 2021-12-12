@@ -15,6 +15,14 @@ This section contains lots of informations about what I'm actually using in my c
 
 The fetch program is one I made quickly using Python. To install it, you just need to copy it to `~/.fetch.py` and install the `colorama` python package.
 
+![Fetch program](fetch.png "Fetch")
+
+# Homepage
+
+This is the homepage I made for my browser. You can find it [here](homepage.html)
+
+![Homepage](homepage.png "Homepage")
+
 ## Main components
 
 * **OS:** Arch Linux x86-64

@@ -103,7 +103,7 @@ bindsym $mod+Shift+w 		kill
 
 # Screenshots
 bindsym Print exec --no-startup-id xfce4-screenshooter --region --save /dev/stdout | xclip -i -selection clipboard -t image/png
-bindsym shif+Print exec --no-startup-id xfce4-screenshooter --window --save /dev/stdout | xclip -i -selection clipboard -t -i image/png
+bindsym shift+Print exec --no-startup-id xfce4-screenshooter --window --save /dev/stdout | xclip -i -selection clipboard -t image/png
 
 # Rofi
 bindsym $mod+space 			exec rofi -show drun -show-icons

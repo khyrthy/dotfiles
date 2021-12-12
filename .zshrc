@@ -116,6 +116,9 @@ source ~/.spotipy
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Pasta login
+alias pasta="ssh khyrthy@192.168.1.61"
+
 alias ls="exa --icons"
 alias mat="cmatrix -C 'cyan' -b"
 alias fetch="clear && paleofetch"
