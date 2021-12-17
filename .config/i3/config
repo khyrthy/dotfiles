@@ -17,8 +17,10 @@ gaps inner 15
 gaps top 40
 
 # Borders
-default_border 			pixel 0
+default_border 			pixel 0 
 default_floating_border pixel 0
+
+border_radius 4
 
 # Colors
 client.focused				#373b41 #373b41 #373b41 #373b41 #373b41 
