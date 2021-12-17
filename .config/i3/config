@@ -34,7 +34,7 @@ bar {
 		  tray_output		none
 		  mode 			hide
 		  hidden_state hide
-		  modifier		Mod1
+		  modifier		Mod3
 
 }
 
@@ -44,7 +44,7 @@ bar {
 exec --no-startup-id dex --autostart --environment i3
 
 # XSS-Lock
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- dm-tool lock
 
 # NetworkManager-Applet
 exec --no-startup-id nm-applet
