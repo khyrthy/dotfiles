@@ -38,7 +38,7 @@ This is the homepage I made for my browser. You can find it [here](homepage.html
  
 * **Bar:** Polybar
 * **Runner:** Rofi
-* **Wallpaper:** Nitrogen [(gallery here)](https://github.com/khyrthy/wallpapers)
+* **Wallpaper:** Feh [(wallpaper here)](wallpaper.jpg) (Thanks to [Aditya Vyas](https://unsplash.com/@aditya1702) on [Unsplash](https://unsplash.com))
 
 ## Applications
 
