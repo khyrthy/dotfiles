@@ -106,3 +106,4 @@ sleep 0.2
 
 rm -v ./homepage.html
 cp -v ~/Documents/.homepage ./homepage.html
+
