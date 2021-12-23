@@ -14,8 +14,3 @@ filetype plugin on
 set ttyfast
 set noswapfile
 
-call plug#begin()
-
-Plug 'netsgnut/arctheme.vim'
-
-call plug#end()

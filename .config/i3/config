@@ -45,8 +45,6 @@ bar {
 # Start XDG Autostart .desktop files using dex
 exec --no-startup-id dex --autostart --environment i3
 
-# XSS-Lock
-exec --no-startup-id xss-lock --transfer-sleep-lock -- dm-tool lock
 
 # NetworkManager-Applet
 exec --no-startup-id nm-applet
