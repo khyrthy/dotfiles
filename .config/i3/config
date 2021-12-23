@@ -50,7 +50,7 @@ exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id nm-applet
 
 # Wallpaper
-exec_always feh --bg-fill ~/Images/Wallpapers/wallpaper
+exec_always --no-startup-id feh --bg-fill ~/Images/Wallpapers/wallpaper
 
 # Policy kit
 exec /usr/lib/xfce-polkit/xfce-polkit

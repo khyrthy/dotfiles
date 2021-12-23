@@ -120,9 +120,11 @@ source ~/.spotipy
 alias pasta="ssh khyrthy@192.168.1.61"
 
 alias ls="exa --icons"
-alias mat="cmatrix -C 'cyan' -b"
-alias fetch="clear && paleofetch"
-alias clock="tty-clock -c -C 6"
+alias mat="cmatrix -C 'blue' -b"
+alias clock="tty-clock -c -C 4"
 
 alias fetch="~/.fetch.py"
+
+alias config="~/.config/wrapper.py"
+
 ~/.fetch.py
