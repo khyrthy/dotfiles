@@ -1,0 +1,29 @@
+[input]
+method = "pulse"
+
+[general]
+mode = normal
+
+bars = 0
+bar_width = 2
+bar_spacing = 1
+
+[output]
+method=ncurses
+channels = mono
+mono_option = average
+data_format = ascii
+ascii_max_range = 10
+
+[color]
+
+gradient = 2
+
+gradient_color_1 = '#a89984'
+gradient_color_2 = '#a89984'
+gradient_color_3 = '#bdae93'
+gradient_color_4 = '#bdae93'
+gradient_color_5 = '#d5c4a1'
+gradient_color_6 = '#d5c4a1'
+gradient_color_7 = '#ebdbb2'
+gradient_color_8 = '#ebdbb2'

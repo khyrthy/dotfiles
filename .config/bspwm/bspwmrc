@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Basic configuration
+bspc config border_width 1 
+bspc config window_gap 15
+
+bspc config focus_follows_pointer true
+bspc config pointer_motion_interval 10
+
+
+# Remove a monitor if disabled or unplugged
+bspc config remove_disabled_monitor true
+bspc config remove_unplugged_monitor true
+bspc config merge_overlapping_monitors true
+
+# Get a normal cursor
+xsetroot -cursor_name "left_ptr"
+
+# Monitors
+bspc monitor LVDS-0 -d 1 2 3 4 5
+bspc monitor DP-3 -d 6 7 8 9 10
+
+# Start sxhkd
+killall sxhkd
+sxhkd &
+
+# Policy kit
+/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+
+# Polybar
+~/.config/polybar/launch.sh &
+
+# Restore nitrogen configuration
+nitrogen --restore
+
+# Start picom
+picom & 
+
+# Network-Manager applet
+nm-applet &
+
+# Indicator for kde connect
+kdeconnect-indicator &
+
+# Dunst
+dunst & 
+
+# Autostart (for desktop applications)
+~/.config/bspwm/autostart.sh &
