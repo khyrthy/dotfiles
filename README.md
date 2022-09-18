@@ -1,4 +1,4 @@
-# Dotfiles!
+# Dotfiles
 
 Here are all my configuration files for this current theme.
 
