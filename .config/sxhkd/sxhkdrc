@@ -1,0 +1,78 @@
+# My sxhkd configuration
+
+# Close a window
+super + shift + w
+	bspc node -c
+
+# Restart bspwm
+super + shift + r
+	bspc wm -r
+
+# Move focus
+super + {Left,Right,Up,Down}
+	bspc node -f {west,east,north,south}
+
+# Swap window
+super + shift + {Left,Right,Up,Down}
+	bspc node -s {west,easy,north,south}
+
+# Change desktop
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
+	bspc desktop -f {1,2,3,4,5,6,7,8,9,10}
+
+super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
+	bspc node -d {1,2,3,4,5,6,7,8,9,10}
+
+
+# Change window state
+super + {f,shift + f,t}
+	bspc node -t {floating,fullscreen,tiled}
+
+# Launch rofi
+super + @space
+	rofi -show drun
+
+# Rofi-power-menu
+super + p
+	rofi -show p -modi p:~/.config/rofi/rofi-power-menu
+
+# Rofi-emoji
+super + semicolon
+	rofi -show emoji -modi emoji
+
+# Bitwarden menu
+super + k
+	bwmenu
+# Start a terminal
+super + Return
+	alacritty
+
+# Increse/Decrease sound level
+XF86AudioRaiseVolume
+	pactl set-sink-volume @DEFAULT_SINK@ +5%
+XF86AudioLowerVolume
+	pactl set-sink-volume @DEFAULT_SINK@ -5%
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# Media controls
+XF86AudioPlay
+	playerctl play-pause
+XF86AudioPrev
+	playerctl previous
+XF86AudioNext
+	playerctl next
+
+# Move or resize
+
+# Expand a window
+super + ctrl + {Left,Right,Up,Down}
+	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+
+# Contract a window
+super + ctrl + shift + {Right,Left,Down,Up}
+	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
+
+# Move a floating window
+super + {Left,Right,Up,Down}
+	bspc node -v {-20 0,20 0,0 -20,0 20}
